@@ -1,12 +1,12 @@
 import React from 'react';
-import projectsData from "../data";
+import projectsData from "../data/projectData";
 
 function Projects() {
     return (
         <section id="projects">
             <div className="projects">
                 <div >
-                    <img className="projects-icon"src="https://via.placeholder.com/100x100" alt="Placeholder" />
+                    <img className="projects-icon" src="https://via.placeholder.com/100x100" alt="Placeholder" />
                 </div>
                 <h1 className="base-header">Projects</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod lorem et magna luctus, in facilisis dolor fringilla. Pellentesque vitae massa nec arcu placerat lobortis. Integer vel euismod velit.</p>

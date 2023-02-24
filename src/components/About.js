@@ -9,8 +9,9 @@ function About() {
                     <h2 className="base-header">About Me</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div>
-                        <a href="#projects" className="btn-gray">Projects</a>
-                        <a href="#contact" className="btn-lime">Contact</a>
+                        <a href="#contact" className="btn-lime">Get In Contact</a>
+                        <a href="#projects" className="btn-gray">Check Out My Projects</a>
+
                     </div>
                 </div>
                 <div className="grid-item-circle">

@@ -46,7 +46,7 @@ const Contact = () => {
                         <input
                             type="text"
                             name="name"
-                            placeholder="Name"
+                            placeholder="Your Name"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                         />
@@ -56,21 +56,20 @@ const Contact = () => {
                         <input
                             type="text"
                             name="email"
-                            placeholder="Email"
+                            placeholder="Your Email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
                         {emailError && <span className="error">{emailError}</span>}
                     </div>
-                    <div className="form-group">
-              <textarea
-                  name="message"
-                  placeholder="Message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-              />
-                        {messageError && <span className="error">{messageError}</span>}
-                    </div>
+                    <textarea
+                        name="message"
+                        placeholder="Message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        style={{fontFamily: "inherit"}}
+                    />
+                    {messageError && <span className="error">{messageError}</span>}
                     <button type="submit">Submit</button>
                 </form>
             </div>
