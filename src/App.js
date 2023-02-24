@@ -5,17 +5,19 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
+import Socials from "./components/Socials";
 function App() {
   return (
       <div className="App">
         <header>
-          <Navbar />
+            <Navbar />
         </header>
         <main>
-          <About />
-          <Projects />
+            <About />
+            <Projects />
             <Skills />
-          <Contact />
+            <Contact />
+            <Socials />
         </main>
       </div>
   );

@@ -263,6 +263,7 @@ h1 {
 /*Navbar CSS*/
 .navbar {
   position: fixed;
+  left: 0;
   top: 0;
   width: 100%;
   background-color: #10161d;
@@ -276,7 +277,7 @@ h1 {
 }
 
 .navbar-header {
-  padding: 4px;
+  padding: 4px 4px 4px 8px;
   display: flex;
   align-items: center;
 }
@@ -285,6 +286,12 @@ h1 {
   font-size: 20px;
   color: #fff;
   margin-right: 10px;
+}
+
+.navbar-header-text-mobile {
+  font-size: 20px;
+  color: #fff;
+  padding: 20px;
 }
 
 .navbar-divider {
@@ -507,4 +514,36 @@ button[type='submit'] {
 
 .star-icon.empty {
   color: transparent;
+}
+.socials-header {
+  text-align: center;
+}
+/* Socials CSS */
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.socials a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  background-color: #10161d;
+  color: white;
+  border-radius: 20%;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  background-color: #efefef;
+  color: #10161d;
+}
+
+.socials i {
+  font-size: 20px;
 }

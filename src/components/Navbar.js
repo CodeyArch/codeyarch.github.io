@@ -49,6 +49,9 @@ function Navbar() {
                     <a href="#contact" className="navbar-link">
                         Contact
                     </a>
+                    <a href="#socials" className="navbar-link">
+                        Socials
+                    </a>
 
                 </nav>
             </div>
@@ -58,11 +61,14 @@ function Navbar() {
                         <span className="hamburger-icon"></span>
                     </button>
                     <div className={`side-nav ${isOpen ? 'open' : ''}`} ref={sideNavRef}>
+
                         <ul>
+                            <h1 className="navbar-header-text-mobile">Codey's Example Portfolio</h1>
                             <li><a href="#about">About</a></li>
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#skills">Skills</a></li>
                             <li><a href="#contact">Contact</a></li>
+                            <li><a href="#socials">Socials</a></li>
                         </ul>
                     </div>
                 </div>
