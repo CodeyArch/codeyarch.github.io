@@ -29,6 +29,9 @@ function Socials() {
                 <a href="https://github.com/CodeyArch">
                     <img src="/assets/github.svg" alt="Github" />
                 </a>
+                <a href="https://pinterest.com/">
+                    <img src="/assets/pinterest.svg" alt="Pinterest" />
+                </a>
             </div>
         </section>
     );
