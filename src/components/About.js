@@ -16,7 +16,7 @@ function About() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div>
                         <button className="btn-lime" onClick={(e) => handleClick(e, "#contact")}>Get In Contact</button>
-                        <button className="btn-gray" onClick={(e) => handleClick(e, "#projects")}>Check Out My Projects</button>
+                        <button className="btn-gray" onClick={(e) => handleClick(e, "#projects")}>See My Projects</button>
 
                     </div>
                 </div>

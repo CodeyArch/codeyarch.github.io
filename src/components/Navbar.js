@@ -5,8 +5,15 @@ function Navbar() {
     const [activeLink, setActiveLink] = useState("");
     const sideNavRef = useRef(null);
 
-    const handleNavClick = (event) => {
-        setActiveLink(event.target.getAttribute("href"));
+    const handleNavClick = (linkId) => {
+        setActiveLink(linkId);
+    };
+    const handleSmoothScroll = (event, target) => {
+        event.preventDefault();
+        document.querySelector(target).scrollIntoView({
+            behavior: "smooth"
+        });
+        handleNavClick(target)
     };
     const handleMenuClick = () => {
         console.log('handleMenuClick called');
@@ -41,19 +48,19 @@ function Navbar() {
                         <div className="navbar-divider"></div>
                     </div>
 
-                    <a href="#about" className={`navbar-link ${activeLink === "#about" ? "active" : ""}`} onClick={handleNavClick}>
+                    <a href="#about" className={`navbar-link ${activeLink === "#about" ? "active" : ""}`}  onClick={(e) => { handleSmoothScroll(e, "#about");  }}>
                         About
                     </a>
-                    <a href="#projects" className={`navbar-link ${activeLink === "#projects" ? "active" : ""}`} onClick={handleNavClick}>
+                    <a href="#projects" className={`navbar-link ${activeLink === "#projects" ? "active" : ""}`} onClick={(e) => { handleSmoothScroll(e, "#projects");  }}>
                         Projects
                     </a>
-                    <a href="#skills" className={`navbar-link ${activeLink === "#skills" ? "active" : ""}`} onClick={handleNavClick}>
+                    <a href="#skills" className={`navbar-link ${activeLink === "#skills" ? "active" : ""}`} onClick={(e) => { handleSmoothScroll(e, "#skills");  }}>
                         Skills
                     </a>
-                    <a href="#contact" className={`navbar-link ${activeLink === "#contact" ? "active" : ""}`} onClick={handleNavClick}>
+                    <a href="#contact" className={`navbar-link ${activeLink === "#contact" ? "active" : ""}`} onClick={(e) => { handleSmoothScroll(e, "#contact");  }}>
                         Contact
                     </a>
-                    <a href="#socials" className={`navbar-link ${activeLink === "#socials" ? "active" : ""}`} onClick={handleNavClick}>
+                    <a href="#socials" className={`navbar-link ${activeLink === "#socials" ? "active" : ""}`} onClick={(e) => { handleSmoothScroll(e, "#socials");  }}>
                         Socials
                     </a>
 
@@ -68,11 +75,21 @@ function Navbar() {
 
                         <ul>
                             <h1 className="navbar-header-text-mobile">Codey's Example Portfolio</h1>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="#socials">Socials</a></li>
+                            <li><a href="#about" className={`navbar-link ${activeLink === "#about" ? "active" : ""}`}  onClick={(e) => { handleSmoothScroll(e, "#about");  }}>
+                                About
+                            </a></li>
+                            <li><a href="#projects" className={`navbar-link ${activeLink === "#projects" ? "active" : ""}`} onClick={(e) => { handleSmoothScroll(e, "#projects");  }}>
+                                Projects
+                            </a></li>
+                            <li><a href="#skills" className={`navbar-link ${activeLink === "#skills" ? "active" : ""}`} onClick={(e) => { handleSmoothScroll(e, "#skills");  }}>
+                                Skills
+                            </a></li>
+                            <li><a href="#contact" className={`navbar-link ${activeLink === "#contact" ? "active" : ""}`} onClick={(e) => { handleSmoothScroll(e, "#contact");  }}>
+                                Contact
+                            </a></li>
+                            <li><a href="#socials" className={`navbar-link ${activeLink === "#socials" ? "active" : ""}`} onClick={(e) => { handleSmoothScroll(e, "#socials");  }}>
+                                Socials
+                            </a></li>
                         </ul>
                     </div>
                 </div>
