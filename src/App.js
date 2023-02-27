@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Socials from "./components/Socials";
+
 function App() {
   return (
       <div className="App">

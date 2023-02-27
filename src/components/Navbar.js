@@ -2,8 +2,12 @@ import React, {useEffect, useRef, useState} from 'react';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [activeLink, setActiveLink] = useState("");
     const sideNavRef = useRef(null);
 
+    const handleNavClick = (event) => {
+        setActiveLink(event.target.getAttribute("href"));
+    };
     const handleMenuClick = () => {
         console.log('handleMenuClick called');
         setIsOpen(!isOpen);
@@ -37,19 +41,19 @@ function Navbar() {
                         <div className="navbar-divider"></div>
                     </div>
 
-                    <a href="#about" className="navbar-link">
+                    <a href="#about" className={`navbar-link ${activeLink === "#about" ? "active" : ""}`} onClick={handleNavClick}>
                         About
                     </a>
-                    <a href="#projects" className="navbar-link">
+                    <a href="#projects" className={`navbar-link ${activeLink === "#projects" ? "active" : ""}`} onClick={handleNavClick}>
                         Projects
                     </a>
-                    <a href="#skills" className="navbar-link">
+                    <a href="#skills" className={`navbar-link ${activeLink === "#skills" ? "active" : ""}`} onClick={handleNavClick}>
                         Skills
                     </a>
-                    <a href="#contact" className="navbar-link">
+                    <a href="#contact" className={`navbar-link ${activeLink === "#contact" ? "active" : ""}`} onClick={handleNavClick}>
                         Contact
                     </a>
-                    <a href="#socials" className="navbar-link">
+                    <a href="#socials" className={`navbar-link ${activeLink === "#socials" ? "active" : ""}`} onClick={handleNavClick}>
                         Socials
                     </a>
 

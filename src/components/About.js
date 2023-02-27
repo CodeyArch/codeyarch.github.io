@@ -2,6 +2,12 @@ import React from 'react';
 
 
 function About() {
+    const handleClick = (event, target) => {
+        event.preventDefault();
+        document.querySelector(target).scrollIntoView({
+            behavior: "smooth"
+        });
+    };
     return (
         <section id="about" style={{width: "100%"}}>
             <div className="grid-container">
@@ -9,8 +15,8 @@ function About() {
                     <h2 className="base-header">About Me</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div>
-                        <a href="#contact" className="btn-lime">Get In Contact</a>
-                        <a href="#projects" className="btn-gray">Check Out My Projects</a>
+                        <button className="btn-lime" onClick={(e) => handleClick(e, "#contact")}>Get In Contact</button>
+                        <button className="btn-gray" onClick={(e) => handleClick(e, "#projects")}>Check Out My Projects</button>
 
                     </div>
                 </div>

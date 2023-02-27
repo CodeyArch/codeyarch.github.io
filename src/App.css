@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  color: #a3a3a3;
+  color: #B8B9BD;
   background-color: #121723;
   height: 100vh;
   width: 99vw;
@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #E3E3E5;
   text-decoration: none;
 }
 
@@ -70,68 +70,92 @@ h1 {
 }
 
 .btn-gray {
-  background-color: #27292f;
+  background-color: #363A44;
   border-radius: 5px;
-  color: #bbb9b9;
+  color: #E3E3E5;
   display: inline-block;
   font-size: 1.2rem;
   margin: 5px 5px 5px -1px;
   padding: 20px 20px;
   text-decoration: none;
-  width: 25%;
+  width: 30%;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
 }
+.btn-gray:hover {
+  background-color: #1E60FF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+
 /* tablet */
-@media (max-width: 992px) {
+@media (max-width: 1330px) {
   .btn-gray {
-    background-color: #27292f;
+    background-color: #363A44;
     border-radius: 5px;
-    color: #bbb9b9;
+    color: #E3E3E5;
     display: inline-block;
     font-size: 1.2rem;
     margin: 5px 5px 5px -1px;
     padding: 20px 20px;
     text-decoration: none;
     width: 90%;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
   }
 }
 /* mobile */
 @media (max-width: 576px) {
   .btn-gray {
-    background-color: #27292f;
+    background-color: #363A44;
     border-radius: 5px;
-    color: #bbb9b9;
+    color: #E3E3E5;
     display: inline-block;
     font-size: 1.2rem;
     margin: 5px 5px 5px -1px;
     padding: 20px 20px;
     text-decoration: none;
     width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
   }
 }
 
 .btn-lime {
   background-color: #2cae46;
   border-radius: 5px;
-  color: #ffffff;
+  color: #E3E3E5;
   display: inline-block;
   font-size: 1.2rem;
   margin: 5px 5px 5px -1px;
   padding: 20px 20px;
   text-decoration: none;
-  width: 25%;
+  width: 30%;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+.btn-lime:hover {
+  background-color: #1E60FF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 /* tablet */
-@media (max-width: 992px) {
+@media (max-width: 1330px) {
   .btn-lime {
     background-color: #2cae46;
     border-radius: 5px;
-    color: #ffffff;
+    color: #E3E3E5;
     display: inline-block;
     font-size: 1.2rem;
     margin: 5px 5px 5px -1px;
     padding: 20px 20px;
     text-decoration: none;
     width: 90%;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
   }
 }
 /* mobile */
@@ -139,13 +163,16 @@ h1 {
   .btn-lime {
     background-color: #2cae46;
     border-radius: 5px;
-    color: #ffffff;
+    color: #E3E3E5;
     display: inline-block;
     font-size: 1.2rem;
     margin: 5px 5px 5px -1px;
     padding: 20px 20px;
     text-decoration: none;
     width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
   }
 }
 
@@ -174,7 +201,7 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: bold;
-  color: white;
+  color: #E3E3E5;
 }
 /* Projects  CSS*/
 .projects {
@@ -196,13 +223,13 @@ h1 {
   margin-bottom: 30px;
   font-size: 36px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #E3E3E5;
 }
 
 .projects-description {
   text-align: center;
   margin-bottom: 50px;
-  color: #AAAAAA;
+  color: #B8B9BD;
 }
 
 .projects-grid {
@@ -244,7 +271,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #FFFFFF;
+  color: #E3E3E5;
 }
 
 .project-card .overlay-button {
@@ -257,7 +284,15 @@ h1 {
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  color: #000;
+  color: #E3E3E5;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+
+}
+.overlay-button:hover {
+  background-color: #1E60FF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 
 /*Navbar CSS*/
@@ -266,9 +301,9 @@ h1 {
   left: 0;
   top: 0;
   width: 100%;
-  background-color: #10161d;
+  background-color: #0D111A;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   height: 80px;
   padding-right: 30px;
@@ -283,14 +318,14 @@ h1 {
 }
 
 .navbar-header-text {
-  font-size: 20px;
-  color: #fff;
+  font-size: 24px;
+  color: #E3E3E5;
   margin-right: 10px;
 }
 
 .navbar-header-text-mobile {
   font-size: 20px;
-  color: #fff;
+  color: #E3E3E5;
   padding: 20px;
 }
 
@@ -307,10 +342,17 @@ h1 {
 }
 
 .navbar-link {
-  font-size: 16px;
-  color: #a3a3a3;
+  font-size: 18px;
+  color: #B8B9BD;
   text-decoration: none;
   margin-right: 20px;
+  padding: 8px 12px;
+}
+
+.navbar-link.active {
+  border-bottom: 5px solid #B8B9BD;
+  padding-bottom: 6px; /* Increase the padding on the bottom to make room for the wider border */
+  margin-bottom: -2px; /* Add a negative margin to the bottom border to make it slightly wider */
 }
 
 .navbar-link:hover {
@@ -343,7 +385,7 @@ h1 {
 .hamburger-icon,
 .hamburger-icon::before,
 .hamburger-icon::after {
-  background-color: #fff;
+  background-color: #E3E3E5;
   content: "";
   display: block;
   height: 3px;
@@ -393,7 +435,7 @@ h1 {
 }
 
 .side-nav li a {
-  color: #fff;
+  color: #E3E3E5;
   display: block;
   font-size: 20px;
   text-decoration: none;
@@ -401,7 +443,7 @@ h1 {
 }
 
 .side-nav li a:hover {
-  color: #00bcd4;
+  color: #1E60FF;
 }
 
 @media all and (min-width: 576px) {
@@ -421,7 +463,7 @@ h1 {
 }
 
 form {
-  background-color: #0e121c;
+  background-color: #0D111A;
   padding: 20px;
   border-radius: 5px;
   border: 6px black;
@@ -448,8 +490,8 @@ textarea {
   margin: 8px 0;
   box-sizing: border-box;
   border: none;
-  color: #fff;
-  border-bottom: 2px solid #ccc;
+  color: #E3E3E5;
+  border-bottom: 2px solid #B8B9BD;
   background-color: transparent;
 }
 
@@ -466,14 +508,19 @@ textarea:focus {
 }
 
 button[type='submit'] {
-  background-color: #08080e;
-  color: #fff;
+  background-color: #05070C;
+  color: #E3E3E5;
   padding: 12px 20px;
   margin: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: none;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+button[type='submit']:hover {
+  background-color: #1E60FF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 /* Skills CSS */
 .skills-container {

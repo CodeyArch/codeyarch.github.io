@@ -13,7 +13,7 @@ function Skills () {
                         <p className="skill-name">{skill.name}</p>
                         <div className="skill-rating">
                             {[...Array(5)].map((_, i) => (
-                                <img className={`star-icon ${i < skill.rating ? 'filled' : 'empty'}`} key={i} src="/assets/star.svg" alt ="star ratings"></img>
+                                <img className={`star-icon ${i < skill.rating ? 'filled' : 'empty'}`} key={i} src={"./assets/star.svg"} alt ="star ratings"></img>
                             ))}
                         </div>
                     </div>
