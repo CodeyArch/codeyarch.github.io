@@ -18,7 +18,7 @@ function Projects() {
                                 <h2 className="projects-header">{project.name}</h2>
                                 <p className="projects-description">{project.description}</p>
                                 <button className="overlay-button">Read More</button>
-                                // Todo: make the "Read More" button actually link to somewhere"
+                                // Todo: Make the "Read More" button actually link to somewhere
                             </div>
                         </div>
                     ))}

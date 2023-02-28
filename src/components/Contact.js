@@ -70,7 +70,7 @@ const Contact = () => {
                         style={{fontFamily: "inherit"}}
                     />
                     {messageError && <span className="error">{messageError}</span>}
-                    <button type="submit">Submit</button>
+                    <button type="submit">Send</button>
                 </form>
             </div>
         </section>

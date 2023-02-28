@@ -460,12 +460,13 @@ h1 {
 }
 /* form css */
 .contact-form-container {
-  max-width: 100%;
+  width: 100%;
   justify-content: center;
-
+  display: inline-flex;
 }
 
 form {
+  width: 100%;
   margin-left: 10%;
   margin-right: 10%;
   background-color: #0D111A;
@@ -514,14 +515,32 @@ textarea:focus {
 
 button[type='submit'] {
   background-color: #05070C;
+  font-size: 18px;
   color: #E3E3E5;
-  padding: 12px 20px;
-  margin: 10px;
+  padding: 20px 32px;
+  margin-left: 35%;
   border: none;
-  border-radius: 5px;
+  width: 30%;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+/* mobile */
+@media (max-width: 576px) {
+  button[type='submit'] {
+    background-color: #05070C;
+    font-size: 18px;
+    color: #E3E3E5;
+    padding: 20px 32px;
+    border: none;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  }
 }
 button[type='submit']:hover {
   background-color: #1E60FF;
@@ -606,7 +625,7 @@ button[type='submit']:hover {
 }
 
 .socials a:hover {
-  background-color: #70ad70;
+  background-color: #1E60FF;
   color: #10161d;
 }
 
