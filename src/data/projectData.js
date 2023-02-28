@@ -1,8 +1,10 @@
 const projectsData = [
     {
-        name: "Project 1",
-        image: "https://via.placeholder.com/300x300",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name: "YANA: Yet Another Notes App",
+        image: "./assets/YANA.png",
+        description: "Yet Another Note App is a simple android note app made with the latest android libraries,   " +
+            "including Jetpack Compose, Dagger Hilt and Room. <br><br>" +
+            "The project was inspired by the clean architecture note app created by Phillipp Lackner, one of the first tutorials I followed when learning Jetpack Compose ",
         link: "https://www.example.com/project1"
     },
     {
