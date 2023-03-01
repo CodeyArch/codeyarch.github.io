@@ -11,7 +11,7 @@ function Projects() {
                 {/*    <img className="projects-icon" src={"./assets/code.svg"} alt="Placeholder" />*/}
                 {/*</div>*/}
                 <h1 className="base-header">Projects</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod lorem et magna luctus, in facilisis dolor fringilla. Pellentesque vitae massa nec arcu placerat lobortis. Integer vel euismod velit.</p>
+                <p>Below are some of the projects I am most proud of and had tons of fun making, check them out!</p>
                 <div className="projects-grid">
                     {projectsData.map((project) => (
                         <div className="project-card" key={project.id}>

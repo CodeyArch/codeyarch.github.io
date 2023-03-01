@@ -62,20 +62,26 @@ h1 {
   align-items: center;
   justify-items: center;
   width: 100%;
-  padding: 60px 30px;
+  padding-top: 40px;
 
 }
 /* mobile */
 @media (max-width: 576px) {
   .grid-container {
-    display: grid;
     margin-left: 0;
     margin-right: 0;
     grid-template-columns: 2fr 1fr ;
     grid-gap: 10px;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
+    padding: 60px 10px;
+
+  }
+}
+/* tablet */
+@media (max-width: 800px) {
+  .grid-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-gap: 10px;
     padding: 60px 10px;
 
   }
@@ -91,6 +97,33 @@ h1 {
     text-align: left;
     font-size: 16px;
   }
+}
+
+.grid-item-circle {
+  border-radius: 50%;
+  height: 300px;
+  overflow: hidden;
+  width: 300px;
+}
+/* mobile */
+@media (max-width: 576px) {
+  .grid-item-circle {
+    height: 150px;
+    width: 150px;
+  }
+}
+/* tablet */
+@media (max-width: 850px) {
+  .grid-item-circle {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.grid-item-circle img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 @media all and (min-width: 576px) {
   .desktopAboutDesc {display:block;}
@@ -169,30 +202,21 @@ h1 {
   }
 }
 
-.grid-item-circle {
-  border-radius: 50%;
-  height: 300px;
-  overflow: hidden;
-  width: 300px;
-}
-/* mobile */
-@media (max-width: 576px) {
-  .grid-item-circle {
-    height: 150px;
-    width: 150px;
-  }
-}
 
-.grid-item-circle img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
 .base-header {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: bold;
   color: #E3E3E5;
+}
+/* mobile */
+@media (max-width: 576px) {
+  .base-header {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #E3E3E5;
+  }
 }
 /* Projects  CSS*/
 .projects {
@@ -702,6 +726,7 @@ button[type='submit']:hover {
   justify-content: center;
   align-items: center;
   margin: 20px 0;
+  justify-items: center;
   padding: 20px;
 }
 /* mobile */
@@ -709,10 +734,11 @@ button[type='submit']:hover {
   .socials {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
-    grid-gap: 25px;
+    grid-gap: 20px;
     padding: 20px;
     justify-content: center;
     align-items: center;
+    justify-items: center;
     margin: 20px 0;
   }
 }

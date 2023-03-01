@@ -9,6 +9,7 @@ const skillsData = [
     { name: 'Python', rating: 3 },
     { name: 'Unity', rating: 4 },
     { name: 'C#', rating: 3 },
+    { name: 'Java', rating: 3 },
 ];
 
 export default skillsData;
