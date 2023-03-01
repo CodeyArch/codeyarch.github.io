@@ -1,5 +1,7 @@
 import React from 'react';
 import projectsData from "../data/projectData";
+import {Link} from "react-router-dom";
+
 
 function Projects() {
     return (
@@ -12,13 +14,12 @@ function Projects() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod lorem et magna luctus, in facilisis dolor fringilla. Pellentesque vitae massa nec arcu placerat lobortis. Integer vel euismod velit.</p>
                 <div className="projects-grid">
                     {projectsData.map((project) => (
-                        <div className="project-card" key={project.name}>
+                        <div className="project-card" key={project.id}>
                             <img src={project.image} alt={project.name} />
                             <div className="overlay">
                                 <h2 className="projects-header">{project.name}</h2>
-                                <p className="projects-description" dangerouslySetInnerHTML={{ __html: project.description }}></p>
-                                <button className="overlay-button">Read More</button>
-                                {/* Todo: Make the "Read More" button actually link to somewhere */}
+                                <p className="projects-description" >{project.description}</p>
+                                <Link to={`/projects/` + project.id}>Read More</Link>
                             </div>
                         </div>
                     ))}

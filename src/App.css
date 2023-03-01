@@ -263,6 +263,7 @@ h1 {
   text-align: center;
   margin-bottom: 50px;
   color: #B8B9BD;
+  white-space: pre-line;
 }
 
 .projects-grid {
@@ -330,6 +331,61 @@ h1 {
 .overlay-button:hover {
   background-color: #1E60FF;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+/* Projects Expanded CSS */
+.project-expanded {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.image-slideshow {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.image-slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-slideshow .prev,
+.image-slideshow .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-slideshow .prev:hover,
+.image-slideshow .next:hover {
+  opacity: 0.8;
+}
+
+.image-slideshow .prev {
+  left: 1rem;
+}
+
+.image-slideshow .next {
+  right: 1rem;
+}
+
+.text-description {
+  width: 50%;
+  padding: 1rem;
+}
+
+.text-description h2 {
+  margin-top: 0;
+}
+
+.text-description p {
+  margin-bottom: 0;
 }
 
 /*Navbar CSS*/

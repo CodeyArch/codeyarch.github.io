@@ -1,26 +1,22 @@
 import React from 'react';
 import './App.css';
-import About from './components/About';
-import Contact from "./components/Contact";
-import Projects from "./components/Projects";
-import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
-import Socials from "./components/Socials";
+import ProjectExpanded from "./components/ProjectExpanded";
+import { Routes, Route } from 'react-router-dom';
+import Main from "./components/main";
+
+
+
 
 function App() {
-  return (
-      <div className="App">
-        <header>
-            <Navbar />
-        </header>
-        <main>
-            <About />
-            <Projects />
-            <Skills />
-            <Contact />
-            <Socials />
-        </main>
-      </div>
+    const projectRoute = "/projects/:id";
+
+    return (
+          <div className="App">
+              <Routes>
+                  <Route path='/' element={<Main/>}></Route>
+                  <Route path={projectRoute} element={<ProjectExpanded/>} />
+              </Routes>
+          </div>
   );
 }
 

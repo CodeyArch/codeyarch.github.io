@@ -44,7 +44,7 @@ function Navbar() {
             <div className="desktopNav">
                 <nav className="navbar">
                     <div className="navbar-header">
-                        <h1 className="navbar-header-text">Codey's Example Portfolio</h1>
+                        <h1 className="navbar-header-text">Codey Arch</h1>
                         <div className="navbar-divider"></div>
                     </div>
 
@@ -74,7 +74,7 @@ function Navbar() {
                     <div className={`side-nav ${isOpen ? 'open' : ''}`} ref={sideNavRef}>
 
                         <ul>
-                            <h1 className="navbar-header-text-mobile">Codey's Example Portfolio</h1>
+                            <h1 className="navbar-header-text-mobile">Codey Arch</h1>
                             <li><a href="#about" className={`navbar-link ${activeLink === "#about" ? "active" : ""}`}  onClick={(e) => { handleSmoothScroll(e, "#about");  }}>
                                 About
                             </a></li>
