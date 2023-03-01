@@ -64,7 +64,7 @@ const Contact = () => {
                     </div>
                     <textarea
                         name="message"
-                        placeholder="Message"
+                        placeholder="Hey! This form does not work yet! Contact me at codeyarch456@gmail.com until this works"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         style={{fontFamily: "inherit"}}

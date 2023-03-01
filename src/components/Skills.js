@@ -9,7 +9,7 @@ function Skills () {
             <div className="skills-container">
                 <h1 className="base-header">Skills</h1>
                 {skills.map((skill) => (
-                    <div className="skill-item" key={skill.id}>
+                    <div className="skill-item" key={skill.name}>
                         <p className="skill-name">{skill.name}</p>
                         <div className="skill-rating">
                             {[...Array(5)].map((_, i) => (

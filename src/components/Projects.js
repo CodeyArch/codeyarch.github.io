@@ -19,7 +19,7 @@ function Projects() {
                             <div className="overlay">
                                 <h2 className="projects-header">{project.name}</h2>
                                 <p className="projects-description" >{project.description}</p>
-                                <Link to={`/projects/` + project.id}>Read More</Link>
+                                <Link to={`/projects/` + project.id} className="overlay-button">Read More</Link>
                             </div>
                         </div>
                     ))}
