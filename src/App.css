@@ -5,8 +5,7 @@ body {
   font-size: 18px;
   color: #B8B9BD;
   background-color: #121723;
-  height: 100vh;
-  width: 99vw;
+
   overflow-x: clip;
   overflow-y: scroll;
 }
@@ -42,6 +41,7 @@ main {
 
 section {
   margin-top: 20px;
+
 }
 
 h1 {
@@ -276,6 +276,13 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* change this to make project cards larger */
   }
 }
+/* Portrait */
+@media (max-width: 950px) {
+  .projects-grid {
+    font-size: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* change this to make project cards larger */
+  }
+}
 /* mobile */
 @media (max-width: 420px) {
   .projects-grid {
@@ -341,28 +348,93 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
 }
 /* Projects Expanded CSS */
+@media all and (min-width: 950px) {
+  .desktopProject-Expanded {display: block}
+  .mobileProject-Expanded {display:none;}
+}
+
+@media all and (max-width: 950px) {
+  .desktopProject-Expanded {display:none;}
+  .mobileProject-Expanded {display:block;}
+}
 .project-expanded {
   display: grid;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: -180px;
-  grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
+  align-items: start;
+  grid-template-columns: repeat(2, 1fr);
+
 
 }
 /* mobile */
-@media (max-width: 576px) {
+@media (max-width: 950px) {
   .project-expanded {
-    margin-left: 0;
-    margin-right: 0;
-    grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
-    grid-gap: 25px;
-    padding: 60px 30px;
-
+    display: inline-block;
+    width: 100%;
   }
 }
+
+.projects-description-grid-1 {
+  display: grid;
+  justify-content: center;
+  align-content: space-between;
+  align-items: start;
+  justify-items: center;
+  margin-top: -40px;
+  border-right: #E3E3E5 solid 8px;
+
+  /*border-top: #E3E3E5 solid 8px;*/
+}
+/* mobile */
+@media (max-width: 950px) {
+  .projects-description-grid-1 {
+    display: grid;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    justify-items: center;
+    margin-top: 0;
+    border-right: #E3E3E5 solid 0;
+    border-left: #E3E3E5 solid 8px;
+
+    /*border-top: #E3E3E5 solid 8px;*/
+  }
+}
+.projects-description-grid-2 {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  position: sticky;
+  height: 100vh;
+  top: 0;
+
+}
+/* mobile */
+@media (max-width: 950px) {
+  .projects-description-grid-2 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    padding-bottom: 20px;
+    height: 50%;
+    top: 0;
+    box-sizing: border-box;
+  }
+}
+/*!* mobile *!*/
+/*@media (max-width: 576px) {*/
+/*  .project-expanded {*/
+/*    margin-left: 0;*/
+/*    margin-right: 0;*/
+/*    grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));*/
+/*    grid-gap: 25px;*/
+/*    padding: 60px 30px;*/
+
+/*  }*/
+/*}*/
 
 .image-slideshow {
   position: relative;
@@ -370,6 +442,16 @@ h1 {
   max-height: 500px;
   max-width: 500px;
 
+}
+/* mobile */
+@media (max-width: 950px) {
+  .image-slideshow {
+    position: relative;
+    border-radius: 5px;
+    max-height: 400px;
+    max-width: 400px;
+
+  }
 }
 
 .image-slideshow img {
@@ -388,6 +470,18 @@ h1 {
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
 }
+/* mobile */
+@media (max-width: 950px) {
+  .image-slideshow .prev,
+  .image-slideshow .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
 
 .image-slideshow .prev:hover,
 .image-slideshow .next:hover {
@@ -403,30 +497,80 @@ h1 {
 }
 
 .text-description {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: -100px;
+  width: 100%;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
+  white-space: pre-line;
+  border-bottom: #E3E3E5 solid 8px;
+  overflow-wrap: break-word;
+
+}
+.text-description-no-border {
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
   white-space: pre-line;
 }
 /* mobile */
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .text-description {
-    margin-left: 0;
-    margin-right: 0;
     font-size: 18px;
-    text-align: center;
+  }
+}
+/* mobile */
+@media (max-width: 800px) {
+  .text-description-no-border {
+    font-size: 18px;
+  }
+}
+
+.text-description-header {
+  margin-left: 10px;
+  color: #E3E3E5;
+  font-size: 22px;
+  text-align: left;
+  white-space: pre-line;
+}
+/* mobile */
+@media (max-width: 800px) {
+  .text-description-header {
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #E3E3E5;
+    font-size: 22px;
+    text-align: left;
     white-space: pre-line;
   }
 }
 
-.text-description h2 {
-  margin-top: 0;
-}
-
 .text-description p {
-  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* mobile */
+@media (max-width: 800px) {
+  .text-description p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+.text-description-no-border p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* mobile */
+@media (max-width: 800px) {
+  .text-description-no-border p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+.text-description a {
+  color: #B8B9BD;
+  text-overflow: clip;
+}
+.text-description-no-border a {
+  color: #B8B9BD;
 }
 
 /*Navbar CSS*/
@@ -578,12 +722,12 @@ h1 {
 
 
 
-@media all and (min-width: 576px) {
+@media all and (min-width: 950px) {
   .desktopNav {display:block;}
   .mobileNav {display:none;}
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 950px) {
   .desktopNav {display:none;}
   .mobileNav {display:block;}
 }
@@ -656,7 +800,7 @@ button[type='submit'] {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
 }
 /* mobile */
-@media (max-width: 576px) {
+@media (max-width: 700px) {
   button[type='submit'] {
     background-color: #05070C;
     font-size: 18px;
@@ -730,7 +874,7 @@ button[type='submit']:hover {
   padding: 20px;
 }
 /* mobile */
-@media (max-width: 576px) {
+@media (max-width: 700px) {
   .socials {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
@@ -773,13 +917,13 @@ button[type='submit']:hover {
   justify-items: center;
 }
 /* tablet */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .socials_large {
     display: grid;
     margin-left: 5%;
     margin-right: 5%;
     grid-gap: 15px;
-    width: 100%;
+    width: 85%;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-items: center;
   }
