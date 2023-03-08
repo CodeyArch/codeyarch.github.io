@@ -28,7 +28,7 @@ const projects = [
     },
     {
         id: 2,
-        title: "Project 2",
+        title: "Maths Challenges V1",
         description: "This is a description for project 2. " +
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor neque ut leo dapibus, in ullamcorper sapien facilisis. " +
             "Quisque sagittis dolor sed nisi consequat ultrices. Duis faucibus libero ac enim varius vestibulum. Sed euismod tellus quis mi tincidunt elementum. " +
@@ -45,7 +45,7 @@ const projects = [
         teams: "" ,
         roles: "Android Developer, Designer, Project Manager",
         images: [
-            { src: "https://via.placeholder.com/300x300", alt: "Image 4" },
+            { src: "../assets/maths_challenges.png", alt: "Maths Challenges Icon" },
             { src: "https://via.placeholder.com/300x300", alt: "Image 5" },
             { src: "https://via.placeholder.com/300x300", alt: "Image 6" },
         ],
@@ -69,7 +69,7 @@ const projects = [
         teams: "" ,
         roles: "Android Developer, Designer, Project Manager",
         images: [
-            { src: "https://via.placeholder.com/300x300", alt: "Image 4" },
+            { src: "../assets/spring_time_sunflower.png", alt: "Spring time sunflower icon" },
             { src: "https://via.placeholder.com/300x300", alt: "Image 5" },
             { src: "https://via.placeholder.com/300x300", alt: "Image 6" },
         ],
@@ -93,7 +93,7 @@ const projects = [
         teams: "" ,
         roles: "Android Developer, Designer, Project Manager",
         images: [
-            { src: "https://via.placeholder.com/300x300", alt: "Image 4" },
+            { src: "../assets/same_level_prototype.png", alt: "Image 4" },
             { src: "https://via.placeholder.com/300x300", alt: "Image 5" },
             { src: "https://via.placeholder.com/300x300", alt: "Image 6" },
         ],
@@ -117,7 +117,7 @@ const projects = [
         teams: "" ,
         roles: "Android Developer, Designer, Project Manager",
         images: [
-            { src: "https://via.placeholder.com/300x300", alt: "Image 4" },
+            { src: "../assets/miscellaneous_games.png", alt: "Image 4" },
             { src: "https://via.placeholder.com/300x300", alt: "Image 5" },
             { src: "https://via.placeholder.com/300x300", alt: "Image 6" },
         ],
@@ -171,5 +171,7 @@ const projects = [
         ],
     },
 ];
+
+// Projects List: YANA, React Portfolio Template, Maths Challenges V1, Spring Time Sunflower, The Same Level Prototype
 
 export default projects;

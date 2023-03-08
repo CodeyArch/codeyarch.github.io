@@ -9,38 +9,33 @@ const projectsData = [
     },
     {
         id: 2,
-        name: "Project 2",
-        image: "https://via.placeholder.com/300x300",
+        name: "Maths challenges",
+        image: "./assets/maths_challenges.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "https://www.example.com/project2"
     },
     {
         id: 3,
-        name: "Project 3",
-        image: "https://via.placeholder.com/300x300",
+        name: "Spring time sunflower",
+        image: "./assets/spring_time_sunflower.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "https://www.example.com/project3"
     },
     {
         id: 4,
-        name: "Project 4",
-        image: "https://via.placeholder.com/300x300",
+        name: "The Same Level Prototype",
+        image: "./assets/same_level_prototype.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "https://www.example.com/project4"
     },
     {
         id: 5,
-        name: "Project 5",
-        image: "https://via.placeholder.com/300x300",
+        name: "Small miscellaneous games",
+        image: "./assets/miscellaneous_games.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "https://www.example.com/project5"
     },
     {
         id: 6,
         name: "Project 6",
         image: "https://via.placeholder.com/300x300",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "https://www.example.com/project6"
     },
 
 ];

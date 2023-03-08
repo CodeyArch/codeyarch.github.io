@@ -5,7 +5,6 @@ body {
   font-size: 18px;
   color: #B8B9BD;
   background-color: #121723;
-
   overflow-x: clip;
   overflow-y: scroll;
 }
@@ -70,14 +69,13 @@ h1 {
   .grid-container {
     margin-left: 0;
     margin-right: 0;
-    grid-template-columns: 2fr 1fr ;
     grid-gap: 10px;
     padding: 60px 10px;
 
   }
 }
 /* tablet */
-@media (max-width: 800px) {
+@media (max-width: 950px) {
   .grid-container {
     margin-left: 5%;
     margin-right: 5%;
@@ -276,7 +274,7 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* change this to make project cards larger */
   }
 }
-/* Portrait */
+/* Landscape */
 @media (max-width: 950px) {
   .projects-grid {
     font-size: 15px;
@@ -284,10 +282,10 @@ h1 {
   }
 }
 /* mobile */
-@media (max-width: 420px) {
+@media (max-width: 570px) {
   .projects-grid {
-    font-size: 13px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* change this to make project cards larger */
+    font-size: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* change this to make project cards larger */
   }
 }
 
