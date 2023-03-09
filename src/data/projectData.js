@@ -9,34 +9,46 @@ const projectsData = [
     },
     {
         id: 2,
-        name: "Maths challenges",
+        name: "Maths Challenges V1",
         image: "./assets/maths_challenges.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        description: "Maths Challenges is an android app written with xml and Kotlin with the aim to teach young children basic numeracy\n\n" +
+            "The app has users complete quizzes of varying difficulty. " +
+            "The quizzes has users answer 10 randomly generated questions with numbers from 1 to 12 " +
+            "doing simple division, addition, subtraction and multiplication.",
     },
     {
         id: 3,
-        name: "Spring time sunflower",
-        image: "./assets/spring_time_sunflower.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name: "Skyhouse",
+        image: "./assets/skyhouse.png",
+        description: "Skyhouse is an all-in one flipping solution for Hypixel Skyblock.\n\n" +
+            "Before being discontinued, Skyhouse allowed users to make profit reselling auctions in Hypixel Skyblock by" +
+            " showing them profitable flips on both an in-game modification and website ",
     },
     {
         id: 4,
-        name: "The Same Level Prototype",
-        image: "./assets/same_level_prototype.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name: "Spring Time Sunflower",
+        image: "./assets/spring_time_sunflower.png",
+        description: "Spring Time Sunflower is a short high-risk, high-reward style arcade game made for the Spring 2d Jam 2021 " +
+            "about simply growing sunflowers in the spring \n\n" +
+            "Players collect water to grow and gain points while avoiding the nasty salt that shrinks the flower. " +
+            "Once the flower gets big enough, retire it to the field and gain a points multiplier for the next one!",
     },
     {
         id: 5,
-        name: "Small miscellaneous games",
-        image: "./assets/miscellaneous_games.png",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name: "The Same Level Prototype",
+        image: "./assets/same_level_prototype.png",
+        description: "An aspiring game developer wants to make a game, but the problem is he doesn't know where to start!\n\n" +
+            "The same level but with many twists. " +
+            "Play through all the different prototypes this game dev experiments with and feel the frustration he feels.",
     },
     {
         id: 6,
-        name: "Project 6",
-        image: "https://via.placeholder.com/300x300",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        name: "Small Miscellaneous Games",
+        image: "./assets/miscellaneous_games.png",
+        description: "A collection of small and silly games I had created when learning Unity 2D.\n\n" +
+            "All of the games here were made following the Complete C# Unity Game Developer 2D 2018 course from GameDev.TV on Udemy",
     },
+
 
 ];
 //Todo: Replace placeholders with real projects
