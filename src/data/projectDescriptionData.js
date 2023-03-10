@@ -20,6 +20,10 @@ const projects = [
         teams: "As this was a solo project, there is no team to credit here, however, I feel it is worth mentioning that this project would not have been possible without Phillipp Lackner" +
             " and his Clean Architecture Note App.\n\n You can find this here: https://github.com/philipplackner/CleanArchitectureNoteApp" ,
         roles: "Android Developer, Designer, Project Manager ",
+        socialMedia: {
+            github: "https://github.com/CodeyArch/YANA",
+            googlePlay: "https://play.google.com/store/apps/details?id=me.goobydev.composenotes"
+        },
         images: [
             { src: "../assets/YANA.png", alt: "YANA: App Icon" }, // TODO: Images
             { src: "https://via.placeholder.com/600x600", alt: "Image 2" },
@@ -51,6 +55,9 @@ const projects = [
         teams: "This was a solo project, however, I had many friends and family provide beta testing and " +
             "this project would not have gone as well without them" ,
         roles: "Android Developer, Designer, Project Manager",
+        socialMedia: {
+            github: "https://github.com/CodeyArch/Maths_challenges",
+        },
         images: [
             { src: "../assets/maths_challenges.png", alt: "Maths Challenges Icon" },
             { src: "https://via.placeholder.com/300x300", alt: "Image 5" },
@@ -86,6 +93,9 @@ const projects = [
             "We also had a small team of beta testers helping ensure the project was up to the expected quality," +
             " I was in charge of this small team as one of my main roles on this project" ,
         roles: "Quality Insurance Lead, Developer/Designer, Community Management, Technical Support ",
+        socialMedia: {
+            github: "https://github.com/skyblock-tools",
+        },
         images: [
             { src: "../assets/skyhouse.png", alt: "Skyhouse Logo" },
             { src: "../assets/skyhouseContributors.png", alt: "Skyhouse Home page and contributors" },
@@ -112,6 +122,10 @@ const projects = [
             "",
         teams: "" ,
         roles: "Android Developer, Designer, Project Manager",
+        socialMedia: {
+            github: "https://github.com/CodeyArch/Spring-Time-Sunflower",
+            itchIO: "https://goobydev.itch.io/spring-time-sunflower",
+        },
         images: [
             { src: "../assets/spring_time_sunflower.png", alt: "Spring time sunflower icon" },
             { src: "https://via.placeholder.com/300x300", alt: "Image 5" },
@@ -136,6 +150,10 @@ const projects = [
             "",
         teams: "" ,
         roles: "Android Developer, Designer, Project Manager",
+        socialMedia: {
+            github: "https://github.com/CodeyArch",
+            itchIO: "https://goobydev.itch.io/the-same-level-prototype",
+        },
         images: [
             { src: "../assets/same_level_prototype.png", alt: "Image 4" },
             { src: "https://via.placeholder.com/300x300", alt: "Image 5" },
@@ -160,6 +178,10 @@ const projects = [
             "",
         teams: "" ,
         roles: "Android Developer, Designer, Project Manager",
+        socialMedia: {
+            github: "https://github.com/CodeyArch",
+
+        },
         images: [
             { src: "../assets/miscellaneous_games.png", alt: "Image 4" },
             { src: "https://via.placeholder.com/300x300", alt: "Image 5" },
@@ -185,6 +207,9 @@ const projects = [
             "",
         teams: "" ,
         roles: "Android Developer, Designer, Project Manager",
+        socialMedia: {
+            github: "https://github.com/CodeyArch",
+        },
         images: [
             { src: "https://via.placeholder.com/300x300", alt: "Image 4" },
             { src: "https://via.placeholder.com/300x300", alt: "Image 5" },

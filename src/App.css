@@ -945,9 +945,11 @@ button[type='submit']:hover {
   margin-left: 5%;
   margin-right: 5%;
   grid-gap: 15px;
-  width: 50%;
+  min-width: 200px;
+  max-width: 400px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   justify-items: center;
+  align-items: center;
 }
 /* tablet */
 @media (max-width: 700px) {
@@ -956,7 +958,8 @@ button[type='submit']:hover {
     margin-left: 5%;
     margin-right: 5%;
     grid-gap: 15px;
-    width: 85%;
+    min-width: 200px;
+    max-width: 300px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-items: center;
   }
@@ -964,8 +967,16 @@ button[type='submit']:hover {
 
 
 .socials_large img {
+  max-width: 200px;
   width: 100%;
   height: auto;
+}
+@media (max-width: 450px) {
+  .socials_large img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+  }
 }
 .socials_large a:hover {
   background-color: #1E60FF;

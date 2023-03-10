@@ -3,22 +3,8 @@ import projectDescriptionData from "../data/projectDescriptionData";
 import {useParams} from "react-router-dom";
 
 function ProjectExpanded() {
-    const [activeIndex, setActiveIndex] = useState(0); // set the active image index to 0 by default
-
     let {id} = useParams()
     const project = projectDescriptionData[id - 1];
-    const handlePrevClick = () => {
-        setActiveIndex((prevIndex) =>
-            prevIndex === 0 ? project.images.length - 1 : prevIndex - 1
-        ); // set the active image index to the previous index
-    };
-
-    const handleNextClick = () => {
-        setActiveIndex((prevIndex) =>
-            prevIndex === project.images.length - 1 ? 0 : prevIndex + 1
-        ); // set the active image index to the next index
-    };
-
     // This exists to find URLs in the projectDescriptionData.js sections and replace them with clickable links
     const createDescriptionElements = (description) => {
         const urlRegex = /(?:https?|ftp):\/\/[\n\S]+/g;
@@ -34,8 +20,6 @@ function ProjectExpanded() {
         }
         return elements;
     }
-
-    const image = project.images[activeIndex]; // get the active image based on the active image index
 
     return (
         <section className="projectDesc">
@@ -60,53 +44,13 @@ function ProjectExpanded() {
                         </div>
 
                     </div>
-                    <div className="projects-description-grid-2">
-                        <h2 className="projects-header">{project.title}</h2>
-                        <div className="image-slideshow">
-                            <img src={image.src} alt={image.alt} />
-                            <div className="prev" onClick={handlePrevClick}>
-                                &#10094;
-                            </div>
-                            <div className="next" onClick={handleNextClick}>
-                                &#10095;
-                            </div>
-                        </div>
-                        <div className="socials_large">
-                            <a href="https://github.com/CodeyArch">
-                                <img src={"../assets/GitHub_Logo_White.png"} alt="Github" />
-                            </a>
-                            <a href="https://play.google.com/store/apps/details?id=me.goobydev.composenotes">
-                                <img src={"../assets/google_play.png"} alt="Google Play" />
-                            </a>
-                        </div>
-                    </div>
-
-                    {/* For socials, they should have links and types pulled from projectDescriptionData.js*/}
+                    {ProjectExpandedSlideshowGrid()}
 
                 </div>
             </div>
             <div className="mobileProject-Expanded">
                 <div className="project-expanded">
-                    <div className="projects-description-grid-2">
-                        <h2 className="projects-header">{project.title}</h2>
-                        <div className="image-slideshow">
-                            <img src={image.src} alt={image.alt} />
-                            <div className="prev" onClick={handlePrevClick}>
-                                &#10094;
-                            </div>
-                            <div className="next" onClick={handleNextClick}>
-                                &#10095;
-                            </div>
-                        </div>
-                        <div className="socials_large">
-                            <a href="https://github.com/CodeyArch">
-                                <img src={"../assets/GitHub_Logo_White.png"} alt="Github" />
-                            </a>
-                            <a href="https://play.google.com/store/apps/details?id=me.goobydev.composenotes">
-                                <img src={"../assets/google_play.png"} alt="Google Play" />
-                            </a>
-                        </div>
-                    </div>
+                    {ProjectExpandedSlideshowGrid()}
                     <div className="projects-description-grid-1">
                         <div className="text-description">
                             <h2 className="text-description-header" >Overview:</h2>
@@ -127,7 +71,6 @@ function ProjectExpanded() {
 
                     </div>
 
-
                     {/* For socials, they should have links and types pulled from projectDescriptionData.js*/}
 
                 </div>
@@ -136,6 +79,65 @@ function ProjectExpanded() {
         </section>
 
     );
+}
+function ProjectExpandedSlideshowGrid() {
+    const [activeIndex, setActiveIndex] = useState(0); // set the active image index to 0 by default
+    let {id} = useParams()
+    const project = projectDescriptionData[id - 1];
+
+    const handlePrevClick = () => {
+        setActiveIndex((prevIndex) =>
+            prevIndex === 0 ? project.images.length - 1 : prevIndex - 1
+        ); // set the active image index to the previous index
+    };
+
+    const handleNextClick = () => {
+        setActiveIndex((prevIndex) =>
+            prevIndex === project.images.length - 1 ? 0 : prevIndex + 1
+        ); // set the active image index to the next index
+    };
+
+    const image = project.images[activeIndex];
+    return (
+        <div className="projects-description-grid-2">
+            <h2 className="projects-header">{project.title}</h2>
+            <div className="image-slideshow">
+                <img src={image.src} alt={image.alt} />
+                <div className="prev" onClick={handlePrevClick}>
+                    &#10094;
+                </div>
+                <div className="next" onClick={handleNextClick}>
+                    &#10095;
+                </div>
+            </div>
+            <div className="socials_large">
+                {Object.keys(project.socialMedia).map((platform) => {
+                    if (platform === "github") {
+                        return (
+                            <a href={project.socialMedia.github} target="_blank" rel="noopener noreferrer" key = {"Github"}>
+                                <img src={"../assets/GitHub_Logo_White.png"} alt="GitHub" />
+                            </a>
+                        );
+                    } else if (platform === "googlePlay") {
+                        return (
+                            <a href={project.socialMedia.googlePlay} target="_blank" rel="noopener noreferrer" key = {"Google Play"}>
+                                <img src={"../assets/google_play.png"} alt="Google Play" />
+                            </a>
+                        );
+                    } else if (platform === "itchIO") {
+                        return (
+                            <a href={project.socialMedia.itchIO} target="_blank"
+                               rel="noopener noreferrer" key = {"Itch.io"}>
+                                <img src={"../assets/itch_badge.png"} alt="Itch.io"/>
+                            </a>
+                        );
+                    } else {
+                        return null;
+                    }
+                })}
+            </div>
+        </div>
+    )
 }
 
 export default ProjectExpanded;
