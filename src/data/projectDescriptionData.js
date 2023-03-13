@@ -5,10 +5,17 @@ const projects = [
         title: "YANA: Yet Another Notes App",
         description: "Yet Another Notes App is a simple android note app made with the latest android libraries,   " +
             "including Jetpack Compose, Dagger Hilt and Room. \n\n" +
-            "The project was inspired by the clean architecture note app created by Phillipp Lackner, one of the first tutorials I followed when learning Jetpack Compose "
-            +
-            "The project was inspired by the clean architecture note app created by Phillipp Lackner, one of the first tutorials I followed when learning Jetpack Compose "+
-            "The project was inspired by the clean architecture note app created by Phillipp Lackner, one of the first tutorials I followed when learning Jetpack Compose ",
+            "The project was inspired by the clean architecture note app created by Phillipp Lackner, one of the first tutorials I followed when learning Jetpack Compose" +
+            "\n\nThe project began by following the clean architecture note app tutorial and then expanding on the app with new features, designs and optimisations." +
+            "\n\nYANA can be used for taking simplistic but customisable notes on any Android device above version 5.1. \n\n The main features include:\n\n" +
+            " - Note creation and editing\n\n" +
+            " - Wide range of note background and text colours\n\n" +
+            " - Sorting filters and searching to help you find specific notes out of thousands\n\n" +
+            " - Note size adjustment\n\n" +
+            " - Archive for deleted notes giving you extra safety for those notes you did not mean to remove\n\n" +
+            " - Read only feature in settings for extra safety if you only want to read and not edit\n\n" +
+            " - Autosave and save on back press to make sure your notes are always up to date - Settings are available to disable this\n\n" +
+            " - Font and theme selection for more customisation \n\n",
         skillsAndTech: "To make this project successful, I had to use a variety of skills and technologies.\n\n" +
             "- Kotlin \n\n " +
             "- Jetpack Compose \n\n" +
@@ -25,9 +32,9 @@ const projects = [
             googlePlay: "https://play.google.com/store/apps/details?id=me.goobydev.composenotes"
         },
         images: [
-            { src: "../assets/YANA.png", alt: "YANA: App Icon" }, // TODO: Images
-            { src: "https://via.placeholder.com/600x600", alt: "Image 2" },
-            { src: "https://via.placeholder.com/500x500", alt: "Image 3" },
+            { src: "../assets/YANA.png", alt: "YANA: App Icon" },
+            { src: "../assets/yana_demo.gif", alt: "Yana: Demo 1" },
+            { src: "../assets/yana_demo2.gif", alt: "Yana: Demo 2" },
         ],
     },
     {
@@ -60,8 +67,9 @@ const projects = [
         },
         images: [
             { src: "../assets/maths_challenges.png", alt: "Maths Challenges Icon" },
-            { src: "https://via.placeholder.com/300x300", alt: "Image 5" },
-            { src: "https://via.placeholder.com/300x300", alt: "Image 6" },
+            { src: "../assets/maths_challenges_home.png", alt: "Maths Challenges Home" },
+            { src: "../assets/maths_challenges_medium.png", alt: "Maths Challenges Medium Mode" },
+            { src: "../assets/maths_challenges_game_over.png", alt: "Maths Challenges Game Over" },
         ],
     },
     {
@@ -128,8 +136,10 @@ const projects = [
         },
         images: [
             { src: "../assets/spring_time_sunflower.png", alt: "Spring time sunflower icon" },
-            { src: "https://via.placeholder.com/300x300", alt: "Image 5" },
-            { src: "https://via.placeholder.com/300x300", alt: "Image 6" },
+            { src: "../assets/spring_time_sunflower_start.png", alt: "Spring time sunflower start menu" },
+            { src: "../assets/spring_time_sunflower_gameplay.png", alt: "Spring time sunflower gameplay" },
+            { src: "../assets/spring_time_sunflower_gameplay2.png", alt: "Spring time sunflower gameplay 2" },
+            { src: "../assets/spring_time_sunflower_game_over.png", alt: "Spring time sunflower game over" },
         ],
     },
     {
@@ -153,11 +163,12 @@ const projects = [
         socialMedia: {
             github: "https://github.com/CodeyArch",
             itchIO: "https://goobydev.itch.io/the-same-level-prototype",
+            youtube: "https://www.youtube.com/watch?v=Q8O1JPtMtEA"
         },
         images: [
-            { src: "../assets/same_level_prototype.png", alt: "Image 4" },
-            { src: "https://via.placeholder.com/300x300", alt: "Image 5" },
-            { src: "https://via.placeholder.com/300x300", alt: "Image 6" },
+            { src: "../assets/same_level_prototype.png", alt: "Same Level Prototype Icon" },
+            { src: "../assets/same_level_prototype_gameplay.png", alt: "Same Level Prototype Gameplay" },
+            { src: "../assets/same_level_prototype_gameplay2.png", alt: "Same Level Prototype Gameplay" },
         ],
     },
     {
@@ -179,13 +190,14 @@ const projects = [
         teams: "" ,
         roles: "Android Developer, Designer, Project Manager",
         socialMedia: {
-            github: "https://github.com/CodeyArch",
 
         },
         images: [
-            { src: "../assets/miscellaneous_games.png", alt: "Image 4" },
-            { src: "https://via.placeholder.com/300x300", alt: "Image 5" },
-            { src: "https://via.placeholder.com/300x300", alt: "Image 6" },
+            { src: "../assets/miscellaneous_games.png", alt: "Miscellaneous Games Collage" },
+            { src: "../assets/miscellaneous_dungeon_crawl.png", alt: "Dungeon Crawl" },
+            { src: "../assets/miscellaneous_nullzard_the_number_wizard.png", alt: "Nullzard The Number Wizard" },
+            { src: "../assets/miscellaneous_super_block_breaker.png", alt: "Super Block Breaker" },
+            { src: "../assets/miscellaneous_galactic_defense.png", alt: "Galactic Defense" },
         ],
     },
 

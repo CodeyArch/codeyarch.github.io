@@ -131,6 +131,13 @@ function ProjectExpandedSlideshowGrid() {
                                 <img src={"../assets/itch_badge.png"} alt="Itch.io"/>
                             </a>
                         );
+                    } else if (platform === "youtube") {
+                        return (
+                            <a href={project.socialMedia.youtube} target="_blank"
+                               rel="noopener noreferrer" key = {"Youtube"}>
+                                <img src={"../assets/youtube_badge.png"} alt="Youtube"/>
+                            </a>
+                        );
                     } else {
                         return null;
                     }

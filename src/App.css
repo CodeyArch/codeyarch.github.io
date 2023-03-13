@@ -437,7 +437,8 @@ h1 {
 .image-slideshow {
   position: relative;
   border-radius: 5px;
-  max-height: 512px;
+  height: auto;
+  max-height: 800px;
   max-width: 700px;
 
 }
@@ -446,7 +447,7 @@ h1 {
   .image-slideshow {
     position: relative;
     border-radius: 5px;
-    max-height: 400px;
+    height: auto;
     max-width: 400px;
 
   }
@@ -457,7 +458,7 @@ h1 {
   .image-slideshow {
     position: relative;
     border-radius: 5px;
-    max-height: 350px;
+    height: auto;
     max-width: 350px;
 
   }
@@ -468,7 +469,7 @@ h1 {
   .image-slideshow {
     position: relative;
     border-radius: 5px;
-    max-height: 250px;
+    height: auto;
     max-width: 250px;
 
   }
@@ -575,6 +576,17 @@ h1 {
     white-space: pre-line;
   }
 }
+/* mobile tiny*/
+@media (max-width: 340px) {
+  .text-description-header {
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #E3E3E5;
+    font-size: 20px;
+    text-align: left;
+    white-space: pre-line;
+  }
+}
 
 .text-description p {
   margin-left: 10px;
@@ -587,6 +599,13 @@ h1 {
     margin-right: 10%;
   }
 }
+/* mobile tiny*/
+@media (max-width: 340px) {
+  .text-description p {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
 .text-description-no-border p {
   margin-left: 10px;
   margin-right: 10px;
@@ -596,6 +615,13 @@ h1 {
   .text-description-no-border p {
     margin-left: 10%;
     margin-right: 10%;
+  }
+}
+/* mobile tiny*/
+@media (max-width: 340px) {
+  .text-description-no-border p {
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 .text-description a {
@@ -945,9 +971,9 @@ button[type='submit']:hover {
   margin-left: 5%;
   margin-right: 5%;
   grid-gap: 15px;
-  min-width: 200px;
+  min-width: 340px;
   max-width: 400px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-items: center;
   align-items: center;
 }
@@ -967,6 +993,7 @@ button[type='submit']:hover {
 
 
 .socials_large img {
+
   max-width: 200px;
   width: 100%;
   height: auto;
