@@ -138,6 +138,13 @@ function ProjectExpandedSlideshowGrid() {
                                 <img src={"../assets/youtube_badge.png"} alt="Youtube"/>
                             </a>
                         );
+                    } else if (platform === "mediaFire") {
+                        return (
+                            <a href={project.socialMedia.mediaFire} target="_blank"
+                               rel="noopener noreferrer" key = {"MediaFire"}>
+                                <img src={"../assets/mediafire_badge.png"} alt="MediaFire"/>
+                            </a>
+                        );
                     } else {
                         return null;
                     }

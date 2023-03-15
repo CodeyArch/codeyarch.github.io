@@ -115,21 +115,30 @@ const projects = [
     {
         id: 4,
         title: "Spring Time Sunflower",
-        description: "This is a description for project 4."+
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor neque ut leo dapibus, in ullamcorper sapien facilisis. " +
-            "Quisque sagittis dolor sed nisi consequat ultrices. Duis faucibus libero ac enim varius vestibulum. Sed euismod tellus quis mi tincidunt elementum. " +
-            "Nam quis ante vitae orci egestas varius. Vestibulum suscipit enim non aliquam suscipit. " +
-            "Sed non tristique lorem. Sed finibus orci lectus, at bibendum quam laoreet in. Nulla consequat libero in lorem euismod, sed hendrerit velit bibendum.",
+        description: "Spring Time Sunflower is a short high-risk, high-reward style arcade game made for the Spring 2d Jam 2021 " +
+            "about simply growing sunflowers in the spring \n\n" +
+            "Players collect water to grow and gain points while avoiding the nasty salt that shrinks the flower. " +
+            "Once the flower gets big enough, retire it to the field and gain a points multiplier for the next one!\n\n" +
+            "Controls: A+D or arrows to move. Z to harvest and get a new plant\n" +
+            "\n" +
+            "Gameplay: \n" +
+            "\n" +
+            "Collect water to gain score.  Avoid salt or you will damage your plant.\n" +
+            "\n" +
+            "Press Z when your plant is ready to harvest to swap to a new plant and increase your score multiplier! Don't worry the game will tell you when you should do this\n\n" +
+            "This game was my first attempt at a game jam and I had joined the jam late due to originally planning a different jam entirely. As such, I only had 24 hours " +
+            "to make all the assets (sound, music and \"art\") and create the scripts. It was a fun way to test my creativity " +
+            "and put all I had learnt to use. I'm very proud of what I was able to create in that short time. I ranked #59 out of 91 entries\n\n" +
+            "Had I had more time on this project, I'd have liked to make the UI more appealing and put more effort into the overall appearance of the game " +
+            "and perhaps implement levels and modes rather than just one gameplay loop that progressively gets more and more intense." ,
         skillsAndTech: "To make this project successful, I had to use a variety of skills and technologies.\n\n" +
-            "- Kotlin \n\n " +
-            "- Jetpack Compose \n\n" +
-            "- Room Database \n\n" +
-            "- Dagger Hilt \n\n" +
-            "- Android Studio \n\n" +
-            "- Google Play Console \n\n" +
-            "",
-        teams: "" ,
-        roles: "Android Developer, Designer, Project Manager",
+            "- Unity\n\n" +
+            "- C#\n\n" +
+            "- Visual Studio Code\n\n" +
+            "- Audacity\n\n" +
+            "- Aseprite \n\n",
+        teams: "This project was a solo project and as such there is no team to credit however I had assistance from family for play-testing this game" ,
+        roles: "Programmer, Game Designer, Sound Designer, Graphic Designer",
         socialMedia: {
             github: "https://github.com/CodeyArch/Spring-Time-Sunflower",
             itchIO: "https://goobydev.itch.io/spring-time-sunflower",
@@ -145,23 +154,25 @@ const projects = [
     {
         id: 5,
         title: "The Same Level Prototype",
-        description: "This is a description for project 5."+
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor neque ut leo dapibus, in ullamcorper sapien facilisis. " +
-            "Quisque sagittis dolor sed nisi consequat ultrices. Duis faucibus libero ac enim varius vestibulum. Sed euismod tellus quis mi tincidunt elementum. " +
-            "Nam quis ante vitae orci egestas varius. Vestibulum suscipit enim non aliquam suscipit. " +
-            "Sed non tristique lorem. Sed finibus orci lectus, at bibendum quam laoreet in. Nulla consequat libero in lorem euismod, sed hendrerit velit bibendum.",
+        description: "An aspiring game developer wants to make a game, but the problem is he doesn't know where to start!\n" +
+            "\n" +
+            "The same level but with many twists. Play through all the different prototypes this game dev experiments with and feel the frustration he feels.\n\n" +
+            "The main inspiration for this game is the series of flash games called \"There is only one level\" \n\n"+
+            "The game features 19 variations and a skilled player can complete it deathless in under 5 minutes, however, it is perfectly rage inducing for most\n\n" +
+            "The most rage inducing part of this project as a whole is the fact that the original source code has all since been lost after an incident with " +
+            "OneDrive in which it merged the files from my computer and laptop and corrupted a large portion of my work. The only backup of this project that existed was 2 weeks " +
+            "prior to its final release, which only features half the levels and a completely different colour scheme and design. Thanks to that, I learnt a valuable lesson " +
+            "and so I now always make multiple backups of important projects. Despite all of that, the full playable game can still be found on my itch.io page.",
         skillsAndTech: "To make this project successful, I had to use a variety of skills and technologies.\n\n" +
-            "- Kotlin \n\n " +
-            "- Jetpack Compose \n\n" +
-            "- Room Database \n\n" +
-            "- Dagger Hilt \n\n" +
-            "- Android Studio \n\n" +
-            "- Google Play Console \n\n" +
-            "",
-        teams: "" ,
-        roles: "Android Developer, Designer, Project Manager",
+            "- Unity\n\n" +
+            "- C#\n\n" +
+            "- Visual Studio Code\n\n" +
+            "- Audacity\n\n",
+        teams: "This project was a solo project and as such there is no team to credit however I had assistance from family for play-testing this game " +
+            "and I also had the assistance of members of my Discord Server in play-testing, feedback and level designs. The blue colour scheme used in the final release " +
+            "is the result of group voting in that server " ,
+        roles: "Programmer, Game Designer, Sound Designer, Graphic Designer",
         socialMedia: {
-            github: "https://github.com/CodeyArch",
             itchIO: "https://goobydev.itch.io/the-same-level-prototype",
             youtube: "https://www.youtube.com/watch?v=Q8O1JPtMtEA"
         },
@@ -174,23 +185,42 @@ const projects = [
     {
         id: 6,
         title: "Small Miscellaneous Games",
-        description: "This is a description for project 6."+
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor neque ut leo dapibus, in ullamcorper sapien facilisis. " +
-            "Quisque sagittis dolor sed nisi consequat ultrices. Duis faucibus libero ac enim varius vestibulum. Sed euismod tellus quis mi tincidunt elementum. " +
-            "Nam quis ante vitae orci egestas varius. Vestibulum suscipit enim non aliquam suscipit. " +
-            "Sed non tristique lorem. Sed finibus orci lectus, at bibendum quam laoreet in. Nulla consequat libero in lorem euismod, sed hendrerit velit bibendum.",
+        description: "A collection of small and silly games I had created when learning Unity 2D.\n\n" +
+            "All of the games here were made following the Complete C# Unity Game Developer 2D 2018 course from GameDev.TV on Udemy\n\n" +
+            "You can find their courses here: https://www.udemy.com/user/gamedevtv/ \n\n" +
+            "The list of games are as follows: \n\n" +
+            "- NullZard The Number Wizard: This is a simple number guessing game in which you have to think of a number between " +
+            "1 and 10000 and NullZard will try and guess what you're thinking based on whether your number is higher or lower than his guesses. \n" +
+            "This game was the first Unity Project I had completed and shared with others. I chose the character \"NullZard\" " +
+            "based on a popular Youtuber I was working alongside called Nullzee. This game was a funny way for me to " +
+            "engage with our community and learn the very basics of unity\n\n" +
+            "- Dungeon Crawl: This is a simple choose your own adventure style game in which you have to navigate a " +
+            "dungeon while the rude and sarcastic narrator berates you for every little thing you do. This game never fully got completed, with only one story path finished, " +
+            "however, it was incredibly fun to work on and I enjoyed writing from the narrators POV. it taught me more about how keyboard interactions work and " +
+            "how to change the game without needing any scene changes and also taught me that a game can still be fun even when ultra-simplistic. \n\n" +
+            "- Super Block Breaker: Perhaps the most difficult game I have ever created, Super Block Breaker is a Breakout style game in which " +
+            "you have a paddle and a ball and you need to break all the destructible blocks in the level to progress. This game is incredibly unbalanced, " +
+            "with many players never making it past the first level, despite there being 5 levels total, however, " +
+            "it is incredibly fun despite being so simplistic. This game taught me a lot about Unity Physics in 2D games " +
+            "and multi-scene projects. This was another game in which I got community involvement to decide how the game should look " +
+            "and unfortunately (or fortunately depending on your tastes), they voted that pixelated milk had to be the background for the game.  \n\n" +
+            "- Galactic Defense: This game is a top-down shooter in which you are a spaceship travelling the galaxy blasting down aliens and other " +
+            "spaceships, gaining score and upgrades as you go along. This game was originally designed for PC but I wanted to experiment " +
+            "and made it for Android instead (while still technically being PC playable). I had successfully managed to build the project as an APK and " +
+            "have it on my phone to play whenever I wanted. I was very proud of this project and ended up submitting it for my college assignment on " +
+            "Games Development. This game was based on the laser defender game included in the Udemy course, however, I added my own ideas and expansions " +
+            "into the project to truly make the game my own. This game would later be the inspiration for another top-down shooter mini-game as part of the unfinished " +
+            "Minigame Mania project \n\n",
         skillsAndTech: "To make this project successful, I had to use a variety of skills and technologies.\n\n" +
-            "- Kotlin \n\n " +
-            "- Jetpack Compose \n\n" +
-            "- Room Database \n\n" +
-            "- Dagger Hilt \n\n" +
-            "- Android Studio \n\n" +
-            "- Google Play Console \n\n" +
-            "",
-        teams: "" ,
-        roles: "Android Developer, Designer, Project Manager",
+            "- Unity\n\n" +
+            "- C#\n\n" +
+            "- Visual Studio Code\n\n" +
+            "- Audacity\n\n",
+        teams: "These were solo projects, however, I had plenty of help from the Nullzee's Cave community and the Gooby's Gathering community " +
+            "with play-testing, feedback and general design. I also had the tutorials from GameDev.TV to help me with these projects " ,
+        roles: "Programmer, Game Designer, Sound Designer, Graphic Designer",
         socialMedia: {
-
+            mediaFire: "https://www.mediafire.com/folder/w3c40xj3s96ug/Games"
         },
         images: [
             { src: "../assets/miscellaneous_games.png", alt: "Miscellaneous Games Collage" },
