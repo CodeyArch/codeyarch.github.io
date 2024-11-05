@@ -86,12 +86,12 @@ const projects = [
             " - Skyblock Bits to Coins\n\n" +
             " - Themes, presets and the ability to customise\n\n" +
             "Skyhouse featured both a free option and a paid option called Skyhouse+.\n Skyhouse+ allowed users with a valid token to " +
-            "see higher value items and access additional filters and cosmetics. We charged a rate of 3$ (USD) monthly on Patreon" +
+            "see higher value items and access additional filters and cosmetics. We charged a rate of $3 (USD) monthly on Patreon " +
             "which was considered a very competitive price for the market. Our low pricing and high feature density alongside " +
             "our optimisations for speed and accuracy allowed us to secure over 3000 unique users (both free and paid combined) and " +
             "an overall profit of 4000$ (USD). \n\nThe project may now be discontinued but it was a successful business and a valuable " +
-            "experience to all on the Skyblock Tools team ",
-        skillsAndTech: "For my part in this project, I had to use these skills and technologies\n\n" +
+            "experience to all on the Skyblock Tools team. ",
+        skillsAndTech: "For my part in this project, I had to use these skills and technologies: \n\n" +
             "- Python \n\n " +
             "- Java \n\n" +
             "- JSON \n\n" +
@@ -99,7 +99,7 @@ const projects = [
             "- IntelliJ and Visual Studio Code \n\n",
         teams: "The full Skyblock Tools development and design team can be found here: https://github.com/skyblock-tools \n\n" +
             "We also had a small team of beta testers helping ensure the project was up to the expected quality," +
-            " I was in charge of this small team as one of my main roles on this project" ,
+            " I was in charge of this small team as one of my main roles on this project." ,
         roles: "Quality Insurance Lead, Developer/Designer, Community Management, Technical Support ",
         socialMedia: {
             github: "https://github.com/skyblock-tools",
@@ -125,10 +125,10 @@ const projects = [
             "\n" +
             "Collect water to gain score.  Avoid salt or you will damage your plant.\n" +
             "\n" +
-            "Press Z when your plant is ready to harvest to swap to a new plant and increase your score multiplier! Don't worry the game will tell you when you should do this\n\n" +
+            "Press Z when your plant is ready to harvest to swap to a new plant and increase your score multiplier! Don't worry the game will tell you when you should do this.\n\n" +
             "This game was my first attempt at a game jam and I had joined the jam late due to originally planning a different jam entirely. As such, I only had 24 hours " +
             "to make all the assets (sound, music and \"art\") and create the scripts. It was a fun way to test my creativity " +
-            "and put all I had learnt to use. I'm very proud of what I was able to create in that short time. I ranked #59 out of 91 entries\n\n" +
+            "and put all I had learnt to use. I'm very proud of what I was able to create in that short time. I ranked #59 out of 91 entries.\n\n" +
             "Had I had more time on this project, I'd have liked to make the UI more appealing and put more effort into the overall appearance of the game " +
             "and perhaps implement levels and modes rather than just one gameplay loop that progressively gets more and more intense." ,
         skillsAndTech: "To make this project successful, I had to use a variety of skills and technologies.\n\n" +

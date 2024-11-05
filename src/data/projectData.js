@@ -5,7 +5,7 @@ const projectsData = [
         image: "./assets/YANA.png",
         description: "Yet Another Note App is a simple android note app made with the latest android libraries,   " +
             "including Jetpack Compose, Dagger Hilt and Room. \n\n" +
-            "The project was inspired by the clean architecture note app created by Phillipp Lackner, one of the first tutorials I followed when learning Jetpack Compose ",
+            "The project was inspired by the clean architecture note app created by Phillipp Lackner, one of the first tutorials I followed when learning Jetpack Compose. ",
     },
     {
         id: 2,
@@ -22,14 +22,14 @@ const projectsData = [
         image: "./assets/skyhouse.png",
         description: "Skyhouse is an all-in one flipping solution for Hypixel Skyblock.\n\n" +
             "Before being discontinued, Skyhouse allowed users to make profit reselling auctions in Hypixel Skyblock by" +
-            " showing them profitable flips on both an in-game modification and website ",
+            " showing them profitable flips on both an in-game modification and website. ",
     },
     {
         id: 4,
         name: "Spring Time Sunflower",
         image: "./assets/spring_time_sunflower.png",
         description: "Spring Time Sunflower is a short high-risk, high-reward style arcade game made for the Spring 2d Jam 2021 " +
-            "about simply growing sunflowers in the spring \n\n" +
+            "about simply growing sunflowers in the spring. \n\n" +
             "Players collect water to grow and gain points while avoiding the nasty salt that shrinks the flower. " +
             "Once the flower gets big enough, retire it to the field and gain a points multiplier for the next one!",
     },
@@ -46,7 +46,7 @@ const projectsData = [
         name: "Small Miscellaneous Games",
         image: "./assets/miscellaneous_games.png",
         description: "A collection of small and silly games I had created when learning Unity 2D.\n\n" +
-            "All of the games here were made following the Complete C# Unity Game Developer 2D 2018 course from GameDev.TV on Udemy",
+            "All of the games here were made following the Complete C# Unity Game Developer 2D 2018 course from GameDev.TV on Udemy.",
     },
 
 
