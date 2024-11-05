@@ -210,14 +210,14 @@ const projects = [
             "have it on my phone to play whenever I wanted. I was very proud of this project and ended up submitting it for my college assignment on " +
             "Games Development. This game was based on the laser defender game included in the Udemy course, however, I added my own ideas and expansions " +
             "into the project to truly make the game my own. This game would later be the inspiration for another top-down shooter mini-game as part of the unfinished " +
-            "Minigame Mania project \n\n",
+            "Minigame Mania project. \n\n",
         skillsAndTech: "To make this project successful, I had to use a variety of skills and technologies.\n\n" +
             "- Unity\n\n" +
             "- C#\n\n" +
             "- Visual Studio Code\n\n" +
             "- Audacity\n\n",
         teams: "These were solo projects, however, I had plenty of help from the Nullzee's Cave community and the Gooby's Gathering community " +
-            "with play-testing, feedback and general design. I also had the tutorials from GameDev.TV to help me with these projects " ,
+            "with play-testing, feedback and general design. I also had the tutorials from GameDev.TV to help me with these projects. " ,
         roles: "Programmer, Game Designer, Sound Designer, Graphic Designer",
         socialMedia: {
             mediaFire: "https://www.mediafire.com/folder/w3c40xj3s96ug/Games"
